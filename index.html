@@ -54,7 +54,7 @@
             <div class="container">
 
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button-order" type="button">Заказать услугу</button>
+                <button data-modal-open class="hero-button-order" type="button">Заказать услугу</button>
 
             </div>
         </section>
@@ -111,9 +111,21 @@
 
                     <h2 class="services-title">Чем мы занимаемся</h2>
                     <ul class="services-list list">
-                        <li class="services-list-item"><img src="./images/our_peculiarities/img1.jpg" alt="фото специфики работы 1" width="370" height="300"></li>
-                        <li class="services-list-item"><img src="./images/our_peculiarities/img2.jpg" alt="фото специфики работы 2" width="370" height="300"></li>
-                        <li class="services-list-item"><img src="./images/our_peculiarities/img3.jpg" alt="фото специфики работы 3" width="370" height="300"></li>
+                        <li class="services-list-item"><img src="./images/our_peculiarities/img1.jpg" alt="фото специфики работы 1" width="370" height="300">
+                            <div class="services-list-block">
+                            <p class="services-list-text">Десктопные приложения</p>
+                            </div>
+                        </li>
+                        <li class="services-list-item"><img src="./images/our_peculiarities/img2.jpg" alt="фото специфики работы 2" width="370" height="300">
+                            <div class="services-list-block">
+                            <p class="services-list-text">Мобильные приложения</p>
+                            </div>
+                        </li>
+                        <li class="services-list-item"><img src="./images/our_peculiarities/img3.jpg" alt="фото специфики работы 3" width="370" height="300">
+                            <div class="services-list-block">
+                            <p class="services-list-text">Дизайнерские решения</p>
+                            </div>
+                        </li>
                     </ul>
             </div>
         </section>
@@ -396,5 +408,13 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <a href="" class="modal-button-link" data-modal-close>
+                <img src="./images/close.svg"></img>
+            </a> 
+        </div>
+    </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
