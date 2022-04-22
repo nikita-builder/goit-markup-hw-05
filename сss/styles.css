@@ -175,7 +175,8 @@ img {
 
 .nav-link {
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  ;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
@@ -186,12 +187,12 @@ img {
 }
 
 .studio-stroke,
-.portfolio-stroke{
+.portfolio-stroke {
   padding-bottom: 30px;
 }
 
 .studio-stroke::after,
-.portfolio-stroke::after{
+.portfolio-stroke::after {
   position: absolute;
   display: block;
   bottom: -1px;
@@ -359,7 +360,7 @@ img {
   display: flex;
 }
 
-.services-list-block{
+.services-list-block {
   position: absolute;
 
   left: 0;
@@ -374,7 +375,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.services-list-text{
+.services-list-text {
   display: inline-block;
   font-family: var(--main-font);
   font-size: 14px;
@@ -465,7 +466,7 @@ img {
   border-color: var(--background-button-clr);
 }
 
-.clients-item{
+.clients-item {
   margin-right: 30px;
 }
 
@@ -514,8 +515,8 @@ img {
 }
 
 .team-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -665,10 +666,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.backdrop{
+.backdrop {
   position: fixed;
   opacity: 1;
-  
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0;
@@ -677,16 +678,16 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal{
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -701,7 +702,7 @@ img {
   border-radius: 4px;
 }
 
-.modal-button-link{
+.modal-button-link {
   position: absolute;
   background-color: #ffffff !important;
   border-width: 1px;
@@ -715,7 +716,7 @@ img {
   border: none;
 }
 
-.modal-button-svg{
+.modal-button-svg {
   position: absolute;
   margin: 10px 10px 0 0;
   top: 0;
@@ -723,7 +724,7 @@ img {
   cursor: pointer;
 }
 
-.modal-icon{
+.modal-icon {
   color: var(--primary-dark-txt);
   background-color: #212121;
 }
@@ -746,9 +747,9 @@ img {
 }
 
 .hero-button {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 6px 22px;
   height: 38px;
   font-family: var(--main-font);
@@ -831,21 +832,21 @@ img {
   color: var(--secondary-ligth-txt);
 }
 
-.portfolio-overlay-photo{
+.portfolio-overlay-photo {
   position: relative;
   overflow: hidden;
-  
+
 }
 
-.projects-item-link:hover .overlay-text{
+.projects-item-link:hover .overlay-text {
   transform: translateY(0);
 }
 
-.projects-item-link:focus .overlay-text{
+.projects-item-link:focus .overlay-text {
   transform: translateY(0);
 }
 
-.overlay-text{
+.overlay-text {
   position: absolute;
   font-style: var(--main-font);
   font-size: 18px;
