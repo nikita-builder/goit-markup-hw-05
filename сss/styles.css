@@ -182,7 +182,7 @@ img {
   line-height: 0.87;
   letter-spacing: 0.02em;
 
-  color: var(--secondary-ligth-txt);
+  color: var(--primary-dark-txt);
 }
 
 .studio-stroke,
@@ -462,7 +462,6 @@ img {
 
 .clients-link:hover,
 .clients-link:focus {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--background-button-clr);
 }
 
@@ -515,7 +514,8 @@ img {
 }
 
 .team-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -530,13 +530,11 @@ img {
 }
 
 .team-link:hover {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--light-background);
   background-color: var(--background-button-clr);
 }
 
 .team-link:focus {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--light-background);
   background-color: var(--background-button-clr);
 }
@@ -748,7 +746,9 @@ img {
 }
 
 .hero-button {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 6px 22px;
   height: 38px;
   font-family: var(--main-font);
@@ -767,7 +767,6 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-light-txt);
   background-color: var(--background-button-clr);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -838,14 +837,12 @@ img {
   
 }
 
-.portfolio-overlay-photo:hover .overlay-text{
+.projects-item-link:hover .overlay-text{
   transform: translateY(0);
-  opacity: 1;
 }
 
-.portfolio-overlay-photo:focus .overlay-text{
+.projects-item-link:focus .overlay-text{
   transform: translateY(0);
-  opacity: 1;
 }
 
 .overlay-text{
@@ -860,7 +857,6 @@ img {
   right: 0;
   width: 370px;
   height: 294px;
-  opacity: 0;
 
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
